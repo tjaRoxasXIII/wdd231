@@ -1,0 +1,145 @@
+:root {
+/* Color Variables taken to resemble vscode */
+  --bg-dark: #1e1e1e;
+  --bg-darker: #121212;
+  --bg-light: #2d2d2d;
+  --text-light: #d4d4d4;
+  --accent-blue: #007acc;
+  --accent-hover: #3399ff;
+  --aside-bg: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+header {
+    display: block;
+    grid-column: 1 / 4;
+    text-align: left;
+    background-color: var(--bg-darker);
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+header span {
+    margin-left: 1rem;
+}
+
+header span img {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+main {
+    display: contents;
+    grid-column: 1 /4;
+    text-align: center;
+}
+
+h1 {
+    grid-column: 1 / 4;
+    text-align: left;
+    margin-left: 1rem;    
+}
+
+h2 {
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: var(--accent-blue);
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+
+}
+section {
+    padding: 1rem;
+}
+
+nav {
+    background-color: var(--bg-darker);
+}
+
+ul {
+    list-style: none;;
+}
+
+a {
+    color: #f4912f;
+
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.navbar a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar a:hover {
+  background-color: var(--accent-hover);
+  color: #fff;
+}
+
+.courses {
+    grid-column: 1 / 4;
+}
+
+.courses button {
+    width: 25%;
+    background-color: var(--bg-light);
+    color: #fff;
+    border: 2px solid var(--accent-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+
+.course-list li {
+    background-color: var(--bg-light);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--accent-blue);
+    color: #ff8d4b;
+}
+
+.course-list p {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+footer {
+    grid-column: 1 / 4;
+    background-color: var(--bg-darker);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer span img {
+    padding: 1rem 2rem;
+}

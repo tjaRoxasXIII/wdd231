@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Taylor Allen">
+    <meta name="description" content="Taylor Allen's course landing page for WDD231">
+    <title>WDD231 Landing Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <span  id="home-logo" class="header">
+            <img src="images/display-code.svg" width="50" alt="Code Display Logo">
+            Taylor Allen
+        </span>
+        <nav>
+        <button id="menu" class="open">☰</button>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorum ex mollitia similique eaque earum repudiandae dignissimos dolores nulla, amet dolore culpa nesciunt voluptatum nisi quia cupiditate deserunt neque eius?</p>
+        </section>
+        <section class="card"> 
+            <h2>Student Photo</h2>
+            <img src="images/taylor-allen.jpg" alt="Profile Picture of Taylor Allen" width="200">
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <button id="all-courses" class="filter-btn">All Courses</button>
+            <button id="wdd-courses" class="filter-btn">WDD Courses</button>
+            <button id="cse-courses" class="filter-btn">CSE Courses</button>
+            <ul class="course-list">
+            </ul>
+        </section>
+    </main>
+    <footer>
+         <span>
+            <a href="https://github.com/tjaroxasxiii"><img src="images/github.svg" alt="GitHub Logo" width="50"></a>
+            <a href="https://linkedin.com/taylor-jay-allen"><img src="images/linkedin.svg" alt="LinkedIn Logo" width="50"></a>
+            <a href="https://x.com/tjaroxasxiii"><img src="images/twitter-alt-circle.svg" alt="X Logo" width="50"></a>
+        </span>
+        <p>&copy; <span id="currentyear"></span> - Taylor Allen - Florida</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
