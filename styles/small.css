@@ -53,6 +53,7 @@ h1 {
 h2 {
     align-items: center;
     margin-bottom: 1rem;
+    color: white;
     background-color: var(--accent-blue);
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
@@ -68,11 +69,6 @@ nav {
 
 ul {
     list-style: none;;
-}
-
-a {
-    color: #f4912f;
-
 }
 
 ul.navbar {
