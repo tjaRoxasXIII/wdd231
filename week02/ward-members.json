@@ -1,0 +1,61 @@
+{
+    "WardMembers:": [
+        {
+            "FamilyName": "Allen",
+            "MovedIn": "01-15-2020",
+            "MemberCount": 4,
+            "BishopricVisit": true,
+            "HouseholdMembers": [
+                {
+                    "Name": "Taylor",
+                    "Gender": "Male",
+                    "Birthdate": "10-17-1995"
+                },
+                {
+                    "Name": "Allegra",
+                    "Gender": "Female",
+                    "Birthdate": "01-01-1998"
+                },
+                {
+                    "Name": "Madeline",
+                    "Gender": "Female",
+                    "Birthdate": "01-20-2022"
+                },
+                {
+                    "Name": "Amelia",
+                    "Gender": "Female",
+                    "Birthdate": "04-27-2025"
+                }
+            ]
+        },
+{
+            "FamilyName": "Barton",
+            "MovedIn": "05-23-2021",
+            "MemberCount": 4,
+            "BishopricVisit": true,
+            "HouseholdMembers": [
+                {
+                    "Name": "David",
+                    "Gender": "Male",
+                    "Birthdate": ""
+                },
+                {
+                    "Name": "Brittany",
+                    "Gender": "Female",
+                    "Birthdate": ""
+                },
+                {
+                    "Name": "Sienna",
+                    "Gender": "Female",
+                    "Birthdate": ""
+                },
+                {
+                    "Name": "Jack",
+                    "Gender": "Male",
+                    "Birthdate": ""
+                }
+            ]
+        }
+    
+]
+}
