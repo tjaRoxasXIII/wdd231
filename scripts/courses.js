@@ -110,7 +110,12 @@ function handleCourseFilter(e) {
 
     filteredCourses.forEach(course => {
         const li = document.createElement('li');
-        li.textContent = `${course.subject} ${course.number}`;
+        if (course.completed) {
+            li.textContent = `✓ ${course.subject} ${course.number}`;
+            li.className = 'completed';
+        } else {
+            li.textContent = `X ${course.subject} ${course.number}`;
+        }
         credits.push(course.credits);
         output.appendChild(li);
     });

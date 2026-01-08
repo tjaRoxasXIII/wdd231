@@ -16,7 +16,7 @@
 
 body {
     display: grid;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Bitcount Grid Single", system-ui;
     background-color: var(--bg-dark);
     color: var(--text-light);
 }
@@ -131,6 +131,14 @@ a {
 .course-list p {
     grid-column: 1 / 4;
     text-align: center;
+}
+
+li.completed{
+    background-color: var(--bg-darker);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--accent-blue);
+    color: #8ef08e;
 }
 
 footer {
