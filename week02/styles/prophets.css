@@ -1,0 +1,30 @@
+body {
+    background-color: lightgray
+}
+
+h1 {
+    text-align: center;
+    color: rgb(12, 69, 115);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+}
+
+#cards section {
+    margin: 1rem;
+    padding: 1rem; 
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+#cards img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 6px gray;
+}
