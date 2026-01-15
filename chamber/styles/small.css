@@ -1,0 +1,152 @@
+:root {
+/* Color Variables taken to resemble vscode */
+  --primary: #0A4C8A;
+  --secondary: #F4B400;
+  --background: #F7F9FC;
+  --text: #1A1A1A;
+  --text-light: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+header {
+    text-align: left;
+    background-color: var(--secondary);
+    color: var(--text);
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+header span {
+    margin-left: 1rem;
+}
+
+header span img {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 1rem;    
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: var(--text);
+    background-color: var();
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+
+}
+section {
+    padding: 1rem;
+}
+
+nav {
+    background-color: var(--bg-darker);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+button {
+    font-size: 1.75rem;
+    border: none;
+    background: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #fac824;
+}
+
+ul {
+    list-style: none;
+}
+
+ul.navbar {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+ul.navbar.show {
+    display: flex;
+    background-color: #fac824;
+    width: 100%;
+}
+
+ul.navbar li {
+    padding: 0.5rem 0;
+}
+
+.navbar a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.navbar a:hover {
+    background-color: var(--accent-hover);
+    color: #fff;
+}
+
+#menu {
+    margin-left: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+}
+
+#cards section {
+    margin: 1rem;
+    padding: 1rem; 
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+#cards img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+#cards p {
+    text-align: left;
+}
+
+footer {
+    grid-column: 1 / 4;
+    background-color: var(--bg-darker);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer span img {
+    padding: 1rem 2rem;
+}
