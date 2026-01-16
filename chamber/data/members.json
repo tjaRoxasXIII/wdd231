@@ -1,11 +1,11 @@
 {"members": [
     {"companyName": "Honey's BBQ", "address": "2200 Posner Blvd, Davenport, FL 33837", "phone": "+18634247300", "site": "https://honeysbbque.com/", "imageUrl": "https://honeysbbque.com/wp-content/uploads/2025/09/Logo-with-Tag.png", "level": 1 },
-    {"companyName": "Men's Wearhouse", "address": "tbd", "phone": "tbd", "site": "tbd", "imageUrl": "tbd"},
-    {"companyName": "Spoon & Sprinkles", "address": "tbd", "phone": "tbd", "site": "tbd", "imageUrl": "tbd"},
-    {"companyName": "Twistee Treat", "address": "tbd", "phone": "tbd", "site": "tbd", "imageUrl": "tbd"},
-    {"companyName": "Beall's", "address": "tbd", "phone": "tbd", "site": "tbd", "imageUrl": "tbd"},
-    {"companyName": "Staples", "address": "tbd", "phone": "tbd", "site": "tbd", "imageUrl": "tbd"},
-    {"companyName": "GNC", "address": "tbd", "phone": "tbd", "site": "tbd", "imageUrl": "tbd"},
-    {"companyName": "Sport Clips", "address": "tbd", "phone": "tbd", "site": "tbd", "imageUrl": "tbd"}
+    {"companyName": "Men's Wearhouse", "address": "2050 Posner Blvd, Davenport, FL 33837", "phone": "+18638523070", "site": "https://www.menswearhouse.com", "imageUrl": "https://image.menswearhouse.com/is/icon/mw_icon_logo.svg", "level": 3},
+    {"companyName": "Spoon & Sprinkles", "address": "2250 Posner Blvd, Davenport, FL 33837", "phone": "+18632048010", "site": "http://www.spoonsprinkles.com/", "imageUrl": "https://spoonsprinkles.com/wp-content/uploads/2023/09/cropped-were-waiting-for-you-to-enjoy-a-delicious-ice-cream-1.png", "level": 1},
+    {"companyName": "Twistee Treat", "address": "1311 Posner Blvd, Davenport, FL 33837", "phone": "N/A", "site": "http://twisteetreat.com/", "imageUrl": "https://twisteetreat.com/wp-content/themes/twistee-theme/assets/images/logo.png", "level": 2},
+    {"companyName": "Beall's", "address": "1271 Posner Blvd, Davenport, FL 33837", "phone": "+18634208096", "site": "https://stores.bealls.com/fl/davenport/1271-posner-blvd", "imageUrl": "https://assets.beallsinc.com/asset/d83ed6a3-4bf4-45a2-9782-cc176e29ac71/WEBP/FY26-January-Site-Asset-BLS-Logo.WebP", "level": 2},
+    {"companyName": "Target", "address": "5000 Grandview Pkwy, Davenport, FL 33837", "phone": "+18632561051", "site": "https://www.target.com/sl/ne-polk-county/2366", "imageUrl": "https://target.scene7.com/is/content/Target/GUEST_ca8f1d56-9000-4407-be78-2c33be983dab?wid=1200&qlt=80", "level": 3},
+    {"companyName": "GNC", "address": "2150 Posner Blvd, Davenport, FL 33837", "phone": "+18634208556", "site": "https://stores.gnc.com", "imageUrl": "https://dynl.mktgcdn.com/p/bqOziPpQq7LC6gIZ_lWo6CI_45K8uVKEOVu3VZ-lVjc/401x56.png", "level": 2},
+    {"companyName": "Sport Clips", "address": "2600 Posner Blvd, Davenport, FL 33837", "phone": "+18638662818d", "site": "https://sportclips.com", "imageUrl": "https://sportclips.com/content-images/logo.png", "level": 1}
 
 ]}

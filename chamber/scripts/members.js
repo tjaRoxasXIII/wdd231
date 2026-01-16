@@ -17,7 +17,8 @@ const displayMembers = (members) => {
         let address = document.createElement('p');
         let phoneNumber = document.createElement('p');
         let level = document.createElement('p');
-        let site = document.createElement('p');
+        let site = document.createElement('a');
+        let globe = document.createElement('span');
 
         companyImage.setAttribute('src', member.imageUrl);
         companyImage.setAttribute('alt', `The company logo for ${member.companyName}`);
@@ -25,18 +26,32 @@ const displayMembers = (members) => {
         companyImage.setAttribute('width', '340');
         companyImage.setAttribute('height', '440');
 
+        site.setAttribute('href', member.site)
+
         companyName.textContent = member.companyName;
-        address.textContent = member.address;
-        phoneNumber.textContent = member.phone;
-        level.textContent = member.level;
-        site.textContent = member.site;
+        address.innerHTML = `<i class="fa-solid fa-map-location"></i> : ${member.address}`;
+        phoneNumber.innerHTML = `<i class="fa-solid fa-phone"></i> : ${member.phone}`;
+        
+        globe.innerHTML = `<i class="fa-solid fa-globe"></i> : `;
+        site.append(globe);
+        site.append(`${member.site}`);
+        
+        if (member.level === 1) {
+            level.innerHTML = `<i class="fa-solid fa-star" style="color: #cd7f32;"></i> : Member`;
+        } else if (member.level === 2) {
+            level.innerHTML = `<i class="fa-solid fa-star" style="color: #c0c0c0;"></i> : Silver Member`;
+        } else if (member.level === 3) {
+            level.innerHTML = `<i class="fa-solid fa-star" style="color: #ffd700;"></i> : Gold Member`;
+        }
+
+        level.setAttribute('class', 'level');
 
         card.appendChild(companyImage);
         card.appendChild(companyName);
         card.appendChild(address);
         card.appendChild(phoneNumber);
-        card.appendChild(level);
         card.appendChild(site);
+        card.appendChild(level);
 
         cards.appendChild(card);
 
