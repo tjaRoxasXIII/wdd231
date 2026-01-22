@@ -83,6 +83,23 @@ button:hover {
     padding: 2rem;
 }
 
+#hero {
+    position: relative;
+    width: 100%;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+#hero button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 ul {
     list-style: none;
 }
