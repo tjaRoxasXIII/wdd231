@@ -94,6 +94,8 @@ button:hover {
 }
 
 #hero button {
+    font-size: medium;
+    padding: 1rem;
     position: absolute;
     bottom: 10%;
     left: 50%;
