@@ -137,7 +137,6 @@ ul.navbar li {
 }
 
 .navbar a:hover {
-    background-color: var(--accent-hover);
     color: #fff;
 }
 
