@@ -137,7 +137,7 @@ ul.navbar li {
 }
 
 .navbar a:hover {
-    color: #fff;
+    background-color: var(--accent-hover);
 }
 
 .level {
