@@ -19,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/localweather.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,7 +30,7 @@
 
             <button id="menu" title="Menu Toggle" class="open">☰</button>
             <ul class="navbar">
-                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="index.html" aria-current="page" class="active">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
@@ -51,14 +53,11 @@
                 <section id="forecast">
                     <h2>3-Day Forecast</h2>
                 </section>
-            </div>
-            <span id="spotlight">
-                <h2>Member Spotlights</h2>
-                <h3>Spotlight 1</h3>
-                <h3>Spotlight 2</h3>
-                <h3>Spotlight 3</h3>
-
             </span>
+            <h2>Member Spotlights</h2>
+            <div id="spotlight">
+              
+            </div>
 
     </main>
     <footer>
