@@ -19,7 +19,6 @@
 
   .active {
     background-color: var(--accent-hover);
-    color: var(--accent-hover);
   }
 
   #hero button {
