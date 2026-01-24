@@ -129,7 +129,7 @@ ul.navbar li {
 }
 
 .navbar a {
-    color: var(--accent-blue);
+    color: var(--text);
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
