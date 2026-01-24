@@ -177,6 +177,11 @@ ul.navbar li {
     padding: 1rem;
 }
 
+#spotlightTitle {
+    padding: 3rem;
+    color: var(--text-light);
+    text-decoration: underline;
+}
 #spotlight {
     display: grid;
     grid-template-columns: 1fr;
