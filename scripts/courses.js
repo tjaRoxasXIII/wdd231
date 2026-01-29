@@ -82,6 +82,7 @@ const allButton = document.querySelector('#all-courses');
 const wddButton = document.querySelector('#wdd-courses');
 const cseButton = document.querySelector('#cse-courses');
 const output = document.querySelector('.course-list');
+const modal = document.querySelector('#course-details');
 
 allButton.addEventListener('click', handleCourseFilter);
 wddButton.addEventListener('click', handleCourseFilter);
@@ -110,6 +111,8 @@ function handleCourseFilter(e) {
 
     filteredCourses.forEach(course => {
         const li = document.createElement('li');
+        li.addEventListener('click', () => openCourseModal(course));
+        li.setAttribute('id', `${course.title}`);
         if (course.completed) {
             li.textContent = `✓ ${course.subject} ${course.number}`;
             li.className = 'completed';
@@ -125,3 +128,36 @@ function handleCourseFilter(e) {
 
 }
 
+function openCourseModal(course) {
+    modal.innerHTML = `
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close dialog">×</button>
+
+            <h3>${course.subject} ${course.number}: ${course.title}</h3>
+
+            <p><strong>Credits:</strong> ${course.credits}</p>
+            <p><strong>Description:</strong> ${course.description}</p>
+            <p><strong>Certificate:</strong> ${course.certificate}</p>
+            <p><strong>Technology Stack:</strong> ${course.technology.join(', ')}</p>
+        </div>
+    `;
+
+    modal.showModal();
+
+    modal.querySelector('.close-modal').addEventListener('click', () => {
+        modal.close();
+    });
+
+    modal.addEventListener('click', (event) => {
+        const box = modal.querySelector('.modal-content').getBoundingClientRect();
+        const inside =
+            event.clientX >= box.left &&
+            event.clientX <= box.right &&
+            event.clientY >= box.top &&
+            event.clientY <= box.bottom;
+
+        if (!inside) {
+            modal.close();
+        }
+    }, { once: true });
+}

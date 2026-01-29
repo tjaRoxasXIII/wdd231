@@ -142,6 +142,37 @@ li.completed{
     color: #8ef08e;
 }
 
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: var(--bg-light);
+    border: 2px solid var(--accent-blue);
+    color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    color: black;
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+
+
 footer {
     grid-column: 1 / 4;
     background-color: var(--bg-darker);
