@@ -383,6 +383,21 @@ dialog button {
     border-radius: 10px;
 }
 
+#results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--secondary);
+    color: var(--text);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+
 footer {
     background-color: var(--secondary);
     color: var(--text);
