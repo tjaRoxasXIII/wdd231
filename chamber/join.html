@@ -43,76 +43,63 @@
 
         <div class="form">
             <form method="get" action="thankyou.html" id="joinForm">
-                <label>
-                    First Name
-                    <input type="text" name="first" title="First Name" autocomplete="given-name" required>
-                </label>
-                <label>
-                    Last Name
-                    <input type="text" name="last" title="Last Name" autocomplete="family-name" required>
-                </label>
-                <label>
-                    Organizational Title
-                    <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title"pattern="[A-Za-z\\-\\s]{7,}">
-                </label>
-                <label>
-                    Email Address
-                    <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required>
-                </label>
-                <label>
-                    Mobile Phone
-                    <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
-                </label>
-
-                <label>
-                    Business / Organization Name
-                    <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
-                </label>
-
-                <label>
-                    Membership Level
-                    <select name="membership" title="Membership Level" required>
+                <label for="first">First Name</label>
+                <input type="text" id="first" name="first" title="First Name" autocomplete="given-name" required>
+                
+                <label for="last">Last Name</label>
+                <input type="text" id="last" name="last" title="Last Name" autocomplete="family-name" required>
+                
+                <label for="orgTitle">Organizational Title</label>
+                <input type="text" id="orgTitle" name="orgTitle" title="Organizational Title">
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required>
+                
+                <label for="phone">Mobile Phone</label>
+                <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+                
+                <label for="org">Business / Organization Name</label>
+                <input type="text" id="org" name="organization" title="Organization Name" autocomplete="organization" required>
+                
+                <label for="membership">Membership Level</label>
+                    <select name="membership" id="membership" title="Membership Level" required>
                         <option value="">Select a Membership Level...</option>
                         <option value="np">NP Membership (Non-Profit)</option>
                         <option value="bronze">Bronze Membership</option>
                         <option value="silver">Silver Membership</option>
                         <option value="gold">Gold Membership</option>
                     </select>
-                </label>
-
-                <label>
-                    Business Description
-                    <textarea name="description" title="Business Description"></textarea>
-                </label>
-
-                <input type="hidden" id="timestamp" name="timestamp">
-
-                <input type="submit" value="Submit Application" class="submitBtn">
+                
+                <label for="description">Business Description</label>
+                <textarea name="description" id="description" title="Business Description" rows="6"></textarea>
+                
+                <input type="submit" value="Apply" class="submitBtn">
             </form>
+        </div>
 
-            <div id="cards">
-                <section class="card fade-in" id="np">
-                    <h3>NP Membership</h3>
-                    <p>$0 - no fee</p>
-                    <a href="#" class="modal-link" data-modal="np">More Info</a>
-                </section>
-                <section class="card fade-in" id="bronze">
-                    <h3>Bronze Membership</h3>
-                    <p>$30/month - Entry-level benefits for small businesses.</p>
-                    <a href="#" class="modal-link" data-modal="bronze">More Info</a>
-                </section>
-                <section class="card fade-in" id="silver">
-                    <h3>Silver Membership</h3>
-                    <p>$60/month - Enhanced visibility and event perks.</p>
-                    <a href="#" class="modal-link" data-modal="silver">More Info</a>
-                </section>
+        <div id="cards">
+            <section class="card fade-in" id="np">
+                <h3>NP Membership</h3>
+                <p>$0 - no fee</p>
+                <a href="#" class="modal-link" data-modal="np">More Info</a>
+            </section>
+            <section class="card fade-in" id="bronze">
+                <h3>Bronze Membership</h3>
+                <p>$30/month - Entry-level benefits for small businesses.</p>
+                <a href="#" class="modal-link" data-modal="bronze">More Info</a>
+            </section>
+            <section class="card fade-in" id="silver">
+                <h3>Silver Membership</h3>
+                <p>$60/month - Enhanced visibility and event perks.</p>
+                <a href="#" class="modal-link" data-modal="silver">More Info</a>
+            </section>
 
-                <section class="card fade-in" id="gold">
-                    <h3>Gold Membership</h3>
-                    <p>$120/month - Premium benefits and top-tier exposure.</p>
-                    <a href="#" class="modal-link" data-modal="gold">More Info</a>
-                </section>
-            </div>
+            <section class="card fade-in" id="gold">
+                <h3>Gold Membership</h3>
+                <p>$120/month - Premium benefits and top-tier exposure.</p>
+                <a href="#" class="modal-link" data-modal="gold">More Info</a>
+            </section>
+        </div>
 
         <dialog id="membershipModal" class="modal" popover="auto">
             <form method="dialog" class="modal-content">

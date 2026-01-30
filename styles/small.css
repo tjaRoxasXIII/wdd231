@@ -42,6 +42,8 @@ header span img {
 main {
     display: block;
     text-align: center;
+    margin: 3rem;
+
 }
 
 h1 {
@@ -143,10 +145,7 @@ li.completed{
 }
 
 dialog {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
     border: 1px solid rgb(0 0 0 / 10%);
     border-radius: .25rem;
     padding: 1rem;
