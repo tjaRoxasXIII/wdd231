@@ -348,7 +348,6 @@ ul.navbar li {
     justify-self: center;
     max-width: 40%;
     padding: 1rem 2rem;
-    font-size: auto;
     border: none;
     border-radius: 10px;
     background: var(--secondary);
