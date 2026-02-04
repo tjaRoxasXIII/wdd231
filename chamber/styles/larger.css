@@ -1,51 +1,9 @@
-@media screen and (min-width: 769px) {
-  #menu {
-    display: none;
-  }
+@media screen and (min-width: 1025px) {
 
-  nav {
-    display: flex;
-    align-items: flex-end;
-  }
-  ul.navbar {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 1rem;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-
-  }
-
-  .active {
-    background-color: var(--accent-hover);
-  }
-
-  #hero button {
-    padding: 2rem;
-    font-size: 1.5rem;
-  }
-  
-  #currentEvents {
+  #discoverGrid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;;
-  }
-  #spotlight {
-    display: flex;
-    justify-content: space-evenly;
-  }
+    grid-template-columns: 1fr 1fr;
 
-  .form #joinForm{
-    max-width: 60%;
-    width: auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1rem;
-    margin: 2rem auto;
-    align-items: center;
-    border: 2px solid var(--text-light);
-    border-radius: 16px;
-    background: rgba(65, 65, 65, 0.5);
   }
 
 }

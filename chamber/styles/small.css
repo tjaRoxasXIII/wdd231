@@ -5,6 +5,7 @@
   --text: #1A1A1A;
   --text-light: #FAFAFA;
   --accent-hover: #fac824;
+  --highlight: #eceff24d;
 }
 
 * {
@@ -396,7 +397,58 @@ dialog button {
     margin-left: auto;
     margin-right: auto;
 }
+
+#discoverGrid section {
+    margin: 1rem 8px;
+    background-color: var(--highlight);
+    border: 1px solid var(--background);
+    border-radius: 10px;
+    overflow: hidden;
+    color: var(--text);
+
+    display: grid;
+    grid-template-areas:
+    "name"
+    "photo"
+    "description"
+    "address"
+    "button"
     
+}
+
+#discoverGrid h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+    text-decoration: underline;
+}
+
+#discoverGrid img {
+    width: 100%;
+    grid-area: photo;
+    border-radius: 10px;
+}
+
+#discoverGrid address {
+    margin: 1rem 10px;
+    grid-area: address;
+}
+
+#discoverGrid p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+#discoverGrid button {
+    background-color: var(--secondary);
+    color: var(--text);
+    grid-area: button;
+    margin-top: 2rem;
+    padding: 1rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
 
 footer {
     background-color: var(--secondary);
