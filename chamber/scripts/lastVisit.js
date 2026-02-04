@@ -1,6 +1,6 @@
 const messageElement = document.getElementById("visitMessage");
 
-const lastVisit = Number(localStorage.getItem("lastVisit"));
+const lastVisit = Number(localStorage.getItem("lastvisit"));
 const now = Date.now();
 
 if (!lastVisit) {
@@ -19,4 +19,4 @@ if (!lastVisit) {
     }
 }
 
-localStorage.setItem("lastVisit", now);
+localStorage.setItem("lastvisit", now);
