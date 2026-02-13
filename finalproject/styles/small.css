@@ -18,10 +18,72 @@
     
 }
 
+ul.navbar {
+    display: none;
+    flex-direction: column;
+    justify-items: flex-start;
+    margin-top: 1rem;
+}
+
+ul.navbar.show {
+    display: flex;
+    width: 100%;
+}
+
+ul.navbar li {
+    padding: 0.5rem 0;
+}
+
+.navbar a {
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+#menu {
+    padding: 1rem;
+}
+
+#recommend-form {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    border: 2px solid var(--accent-color-light-bg);
+}
+
+#recommend-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 0.75rem;
+}
+
+#recommend-form input,
+#recommend-form textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+form {
+    
+}
+
+form button {
+    width: 80%;
+    align-self: center;
+    padding: 0.75rem;
+}
+
 body {
     background-color: var(--primary-color);
     color: var(--font-light);
 
+}
+
+main {
+    text-align: center;
 }
 
 h1, h2, h3 {
@@ -63,6 +125,7 @@ nav a {
 
 nav a:hover {
     background-color: var(--accent-color-light-bg);
+    border-radius: 10px;
 }
 
 img {
@@ -70,7 +133,6 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
-    padding: 1rem;  
 }
 
 footer {
@@ -79,10 +141,60 @@ footer {
     color: var(--font-light);
 }
 
+.active {
+    text-decoration: underline;}
+
 .socials {
     display: flex;
     justify-content: space-evenly;
     width: 60%;
     margin: 0 auto;
     padding: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+#game-list div {
+    border: 2px solid var(--accent-color-light-bg);
+    border-radius: 10px;
+    background: linear-gradient(to bottom,var(--bg-color), var(--primary-color));
+    padding: 1rem;
+
+}
+
+#game-list img {
+    border-radius: 10px 10px 0 0;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 4px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.star-rating span {
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.star-rating span.rated {
+    color: gold;
+}
+
+.star-rating span:hover,
+.star-rating span:hover ~ span {
+    color: orange;
 }

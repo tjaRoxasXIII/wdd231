@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The Library page for The Game Database project, allowing users to view my personal Steam library and discover new games.">
+    <meta name="author" content="Taylor Allen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game Database - Game Library</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@300&family=Nunito&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../scripts/getdates.js" defer></script>
+    <script type="module" src="scripts/loadgames.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+        <h1>The Game Database</h1>
+            <button id="menu" title="Menu Toggle" class="open">☰</button>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="library.html" aria-current="page" class="active">Game Library</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h2>My Steam Library</h2>
+        <h3 id="lifetime-hours">Total Lifetime Hours Played: 0</h3>
+        <input type="text" id="search" placeholder="Search games...">
+        <select id="sorting-options">
+            <option value="">Sort by:</option>
+            <option value="name">Name - (A/Z)</option>
+            <option value="name-desc">Name - (Z/A)</option>
+            <option value="hours">Hours Played</option>
+        </select>
+        <button id="clear-ratings">Clear All Ratings</button>
+        <div id="game-list"></div>
+    </main>
+    <footer>
+        <span class="socials">
+            <a href="https://github.com/tjaroxasxiii"><img src="../images/github.svg" alt="GitHub Logo" width="40"></a>
+            <a href="https://linkedin.com/taylor-jay-allen"><img src="../images/linkedin.svg" alt="LinkedIn Logo" width="40"></a>
+            <a href="https://x.com/taylorjayallen1"><img src="../images/twitter-alt-circle.svg" alt="X/Twitter Logo" width="40"></a>
+        </span>
+        <p>&copy; <span id="currentyear"></span> - Taylor Allen - Florida</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

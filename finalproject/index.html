@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The Game Database is a project that allows users to explore their Steam library and discover new games.">
+    <meta name="author" content="Taylor Allen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game Database</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@300&family=Nunito&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+        <h1>The Game Database</h1>
+            <button id="menu" title="Menu Toggle" class="open">☰</button>
+            <ul class="navbar">
+                <li><a href="index.html" aria-current="page" class="active">Home</a></li>
+                <li><a href="library.html">Game Library</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <img src="images/hero-wide.webp" alt="Hero Image">
+        <h2>Welcome to The Game Database</h2>
+        <p>Discover and explore your Steam library like never before. With The Game Database, you can easily filter and search through your existing games to find hidden gems and discover new titles that match your interests. Whether you're looking for your most played game or want to explore a specific genre, The Game Database has you covered.</p>
+        <p>Get started by navigating to the Game Library to view your collection or head over to the Explore section to find new games based on your preferences.</p>
+
+        <h2>Highlights</h2>
+        <div id="game-list"></div>
+
+        <section id="recommend-form">
+            <h2>What should I play next?</h2>
+            <form id="game-recommendation-form" action="thankyou.html" method="GET">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="steamid" placeholder="Your Steam User ID" required>
+                <textarea name="recommendation" placeholder="Your Game Recommendation" required></textarea>
+                <button type="submit">Send your recommendation(s)</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <span class="socials">
+            <a href="https://github.com/tjaroxasxiii"><img src="../images/github.svg" alt="GitHub Logo" width="40"></a>
+            <a href="https://linkedin.com/taylor-jay-allen"><img src="../images/linkedin.svg" alt="LinkedIn Logo" width="40"></a>
+            <a href="https://x.com/taylorjayallen1"><img src="../images/twitter-alt-circle.svg" alt="X/Twitter Logo" width="40"></a>
+        </span>
+        <p>&copy; <span id="currentyear"></span> - Taylor Allen - Florida</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
