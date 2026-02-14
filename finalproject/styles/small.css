@@ -19,7 +19,7 @@
 }
 
 a {
-    color: var(--accent-color-light-bg)
+    color: var(--font-light)
 }
 
 ul.navbar {
