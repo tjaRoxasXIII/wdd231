@@ -112,6 +112,7 @@ function renderExploreCards() {
   exploreGames.forEach(game => {
     const item = document.createElement("div");
     const img = document.createElement("img");
+    img.classList.add("game-image");
     const title = document.createElement("h3");
     const price = document.createElement("p");
 

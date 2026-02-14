@@ -227,3 +227,7 @@ footer {
     cursor: pointer;
     color: var(--font-light);
 }
+
+.game-image:hover {
+    cursor: pointer;
+}
