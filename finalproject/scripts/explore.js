@@ -36,6 +36,7 @@ async function fetchDetails(appid) {
     if (!response.ok) throw new Error("Details request failed");
     const data = await response.json();
     const entry = data[appid];
+    console.log(entry);
     if (!entry || !entry.success) return null;
 
     let price = entry.data.price_overview ? entry.data.price_overview.final : 0;
@@ -58,7 +59,11 @@ async function fetchDetails(appid) {
       name: entry.data.name,
       header_image: entry.data.header_image,
       price,
-      ccu: entry.data.ccu || 0
+      ccu: entry.data.ccu || 0,
+      short_description: entry.data.short_description,
+      genres: entry.data.genres,
+      release_date: entry.data.release_date,
+      pc_requirements: entry.data.pc_requirements,
     };
 
   } catch (err) {
@@ -110,6 +115,10 @@ function renderExploreCards() {
     const title = document.createElement("h3");
     const price = document.createElement("p");
 
+    img.addEventListener("click", async () => {
+      const details = await fetchDetails(game.appid);
+      if (details) openGameModal(details);
+    });
     img.src = game.header_image;
     img.alt = game.name;
     title.textContent = game.name;
@@ -135,6 +144,34 @@ async function loadExploreGames() {
     console.error(err);
   }
 }
+
+function openGameModal(details) {
+  const modal = document.getElementById("game-modal");
+
+  document.getElementById("modal-title").textContent = details.name;
+  document.getElementById("modal-summary").innerHTML =
+    `<strong>Summary:</strong> ${details.short_description}`;
+
+  document.getElementById("modal-pc-req").innerHTML =
+    `<strong>PC Requirements:</strong><br>${details.pc_requirements.recommended}`;
+
+  document.getElementById("modal-release").innerHTML =
+    `<strong>Release Date:</strong> ${details.release_date.date}`;
+
+  document.getElementById("modal-genres").innerHTML =
+    `<strong>Genres:</strong> ${details.genres.map(g => g.description).join(", ")}`;
+
+  modal.showModal();
+}
+
+document.getElementById("close-modal").addEventListener("click", () => {
+    document.getElementById("game-modal").close();
+});
+
+document.getElementById("game-modal").addEventListener("click", (e) => {
+    if (e.target.id === "game-modal") e.target.close();
+});
+
 
 document.getElementById("search-button").addEventListener("click", async () => {
   try {
