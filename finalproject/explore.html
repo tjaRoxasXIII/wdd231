@@ -5,7 +5,12 @@
     <meta name="description" content="The Explore page for The Game Database project, allowing users to discover new games by submitting search parameters.">
     <meta name="author" content="Taylor Allen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Discover New Games — The Game Database">
+    <meta property="og:description" content="Find your next favorite game with The Game Database's explore feature by browsing or searching directly from Steam.">
+    <meta property="og:image" content="images/hero-wide.webp">
+    <meta property="og:url" content="https://tjaroxasxiii.github.io/wdd231/finalproject/explore.html">
     <title>The Game Database - Explore</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -13,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@300&family=Nunito&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="../scripts/getdates.js" defer></script>
-    <script type="module" src="scripts/explore.js" defer></script>
+    <script type="module" src="scripts/explore.js"></script>
     <script src="scripts/menu.js" defer></script>
 </head>
 <body>
@@ -38,7 +43,7 @@
         <button id="show-more" class="hidden">Show More</button>
 
         <div id="game-list"></div>
-        
+
         <dialog id="game-modal">
             <div id="modal-content">
                 <button id="close-modal">X</button>
